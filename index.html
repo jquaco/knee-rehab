@@ -462,25 +462,25 @@ h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; }
   <div class="page" id="page-info">
     <div class="info-card">
       <h3>About This Program</h3>
-      <p>Patellar tracking & VMO strengthening protocol targeting quad tightness and patellar instability from an old twisting injury. Stretching is daily (10 min). Strength is 4×/week (20 min). The 8-week mark is your checkpoint — if giving-way episodes haven't improved by then, get an MRI.</p>
+      <p>A patellar tracking and VMO strengthening protocol designed for quad tightness and patellar instability. Stretching is daily (10 min). Strength training is 4× per week (20 min). The 8-week mark is the key checkpoint — if symptoms haven't improved by then, imaging such as an MRI may be warranted.</p>
     </div>
     <div class="info-card">
       <h3>How to Install as App</h3>
-      <p>Open this file in Chrome on your Android phone. Tap the three-dot menu (⋮) → "Add to Home screen" → "Add." The app will appear on your home screen and run fullscreen like a native app. All your data is stored locally on your device.</p>
+      <p>Open this page in Chrome on an Android device. Tap the three-dot menu (⋮) → "Add to Home screen" → "Add." The app will appear on the home screen and run fullscreen like a native app. All data is stored locally on the device.</p>
     </div>
     <div class="info-card">
       <h3>Schedule</h3>
       <p><strong>Every day:</strong> Stretching & mobility (couch stretch, Thomas test, foam roll, kneeling hip stretch).<br><br>
       <strong>4× per week (Mon/Wed/Fri/Sat recommended):</strong> Strength exercises (terminal knee extensions, Spanish squats, step-downs, single-leg wall sits, KB RDLs, lateral walks warm-up).<br><br>
-      <strong>Pre-ride:</strong> Always do the couch stretch before riding — 60 sec per side minimum.</p>
+      <strong>Before activity:</strong> Always do the couch stretch before any lower-body exercise or sport — 60 sec per side minimum.</p>
     </div>
     <div class="info-card">
       <h3>When to Stop an Exercise</h3>
-      <p>Discomfort and mild muscle burn are normal. Sharp pain, the lightning-strike sensation, or anything that feels like your knee is shifting are not. Stop immediately if you feel any of those. Rest a few days, keep stretching gently, and resume when the acute pain passes.</p>
+      <p>Discomfort and mild muscle burn are normal. Sharp pain, sudden instability, or anything that feels like the knee is shifting are not. Stop immediately if any of those occur. Rest a few days, continue gentle stretching, and resume once the acute pain passes.</p>
     </div>
     <div class="info-card">
       <h3>Data & Privacy</h3>
-      <p>All data is stored on your device only using your browser's local storage. Nothing is sent anywhere. If you clear your browser data, your progress history will be lost.</p>
+      <p>All data is stored locally on the device using the browser's local storage. Nothing is transmitted externally. Clearing browser data will erase progress history.</p>
     </div>
     <button class="reset-btn" onclick="confirmReset()">Reset All Data</button>
   </div>
@@ -517,15 +517,15 @@ const EXERCISES = {
       id: 's1', name: 'Couch Stretch', star: true,
       meta: '60–90 sec / side · 2× daily',
       timer: 75,
-      why: 'Your #1 priority — directly addresses the quad tightness causing your patellar tracking issues.',
+      why: 'Top priority — directly addresses quad tightness that causes patellar tracking issues.',
       steps: [
         'Kneel facing away from a wall. Place one foot up against the wall behind you with your shin flat against the wall.',
-        'Your down knee should be on a pad right at the base of the wall.',
-        'Step your front foot forward into a lunge, torso upright.',
+        'The down knee should be on a pad right at the base of the wall.',
+        'Step the front foot forward into a lunge, torso upright.',
         'Drive hips forward, squeeze the glute on the back leg side.',
         'Hold 60–90 seconds per side. Breathe. Don\'t bounce.',
       ],
-      tip: 'Far more effective than a standing quad stretch — it pins the rectus femoris across both joints. If the wall is too intense, use a couch arm for a gentler angle.'
+      tip: 'Far more effective than a standing quad stretch — it pins the rectus femoris across both joints. If the wall version is too intense, use a couch arm for a gentler angle.'
     },
     {
       id: 's2', name: 'Hip Flexor Bed Stretch (Thomas)', star: false,
@@ -538,20 +538,20 @@ const EXERCISES = {
         'Let the other leg hang off the edge — gravity pulls it into a stretch.',
         'To add the rectus femoris component, bend the hanging knee so that foot drops toward the floor.',
       ],
-      tip: 'Already in your PT program — this one\'s a keeper. Pair with the couch stretch for comprehensive coverage.'
+      tip: 'A staple in most PT programs for good reason. Pair with the couch stretch for comprehensive hip flexor and rectus femoris coverage.'
     },
     {
       id: 's3', name: 'Foam Roll — Outer Quad (VL)', star: false,
       meta: '60–90 sec / leg · daily',
       timer: 75,
-      why: 'Releases the vastus lateralis which pulls your patella laterally.',
+      why: 'Releases the vastus lateralis which pulls the patella laterally.',
       steps: [
-        'Lie on your side with foam roller under your outer thigh, mid-thigh.',
-        'Support on your forearm. Stack or stagger legs.',
+        'Lie on your side with foam roller under the outer thigh, mid-thigh.',
+        'Support on the forearm. Stack or stagger legs.',
         'Roll from just above the knee to the hip, focusing on the outer quad — not the IT band itself.',
-        'Pause on tender spots for 10–15 seconds, or flex/extend your knee while holding.',
+        'Pause on tender spots for 10–15 seconds, or flex/extend the knee while holding.',
       ],
-      tip: 'This replaces your IT band stretches. The IT band barely deforms from stretching, but the VL muscle alongside it responds well to rolling.'
+      tip: 'More effective than IT band stretching. The IT band barely deforms from static stretching, but the VL muscle tissue alongside it responds well to pressure and rolling.'
     },
     {
       id: 's4', name: 'Kneeling Anterior Hip Stretch', star: false,
@@ -574,19 +574,19 @@ const EXERCISES = {
       timer: null,
       why: '★ The single most important strengthening exercise for VMO activation.',
       steps: [
-        'Loop a resistance band around a sturdy post at knee height. Step in so the band is behind your knee crease.',
-        'Face the anchor. Step back to create tension with knee slightly bent (20–30°).',
-        'Squeeze your quad to drive your knee to full lockout against the band resistance.',
+        'Loop a resistance band around a sturdy post at knee height. Step in so the band sits behind the knee crease.',
+        'Face the anchor. Step back to create tension with the knee slightly bent (20–30°).',
+        'Squeeze the quad to drive the knee to full lockout against the band resistance.',
         'Hold lockout 1 second, squeezing hard. Feel the inner knee muscle (VMO) fire.',
         'Slowly release back to slightly bent. That\'s one rep. 3 sets of 20.',
       ],
-      tip: 'Place your hand on the teardrop muscle above/inside the kneecap — you should feel it pop with each rep. If you only do one exercise, make it this one.'
+      tip: 'Place a hand on the teardrop-shaped muscle above and inside the kneecap — it should visibly contract with each rep. The last 15° of extension is where the VMO does most of its work.'
     },
     {
       id: 'w2', name: 'Spanish Squats', star: true,
       meta: '3 × 12–15 reps · Heavy band',
       timer: null,
-      why: '★ Full quad strengthening with minimal kneecap compression. Replaces KB squats.',
+      why: '★ Full quad strengthening with minimal patellofemoral compression.',
       steps: [
         'Heavy band around a post at knee height. Step in with both legs, band behind both knees.',
         'Face the anchor. Walk back until serious tension — you can lean back and the band holds you.',
@@ -600,7 +600,7 @@ const EXERCISES = {
       id: 'w3', name: 'Step-Downs (Eccentric)', star: false,
       meta: '3 × 10 / leg · 6–8" step',
       timer: null,
-      why: 'Directly trains the movement pattern that triggers your episodes.',
+      why: 'Trains eccentric quad control for stairs and loaded descent — a common patellar pain trigger.',
       steps: [
         'Stand on a 6–8 inch step on one leg.',
         'Slowly bend the standing knee to lower the other foot toward the ground. Take 3 full seconds going down.',
@@ -608,7 +608,7 @@ const EXERCISES = {
         'Keep hips level. Watch that the standing knee tracks over your second toe.',
         '3 sets of 10 per leg.',
       ],
-      tip: 'This simulates going downstairs under load — your exact problem scenario. Start bodyweight only. Once 3×10 is clean on each leg, hold a dumbbell or KB.'
+      tip: 'Simulates going downstairs under load in a controlled way. Start bodyweight only. Once 3×10 is clean on each leg, add resistance with a dumbbell or kettlebell.'
     },
     {
       id: 'w4', name: 'Single-Leg Wall Sit (Shallow)', star: false,
@@ -627,7 +627,7 @@ const EXERCISES = {
       id: 'w5', name: 'Kettlebell RDLs', star: false,
       meta: '3 × 10–12 · Moderate weight',
       timer: null,
-      why: 'Posterior chain strength takes load off the quad-dominant pattern stressing your knee.',
+      why: 'Posterior chain strength reduces reliance on quad-dominant movement patterns.',
       steps: [
         'Feet hip-width, KB in both hands in front.',
         'Hinge at hips, push butt back. Slight knee bend, flat back.',
@@ -646,7 +646,7 @@ const EXERCISES = {
         'Step laterally, keeping tension. Don\'t let feet come together.',
         '15 steps one direction, 15 back. 2 sets.',
       ],
-      tip: 'Demoted from core exercise to warm-up only. Do these first to wake up the glute med before VMO work.'
+      tip: 'Best used as a warm-up rather than a core exercise. Do these first to activate the glute med before the main VMO work.'
     }
   ]
 };
@@ -1138,7 +1138,7 @@ function showToast(msg) {
 }
 
 function confirmReset() {
-  if (confirm('This will delete all your progress data. Are you sure?')) {
+  if (confirm('This will delete all progress data. Are you sure?')) {
     localStorage.removeItem('kneeRehab');
     showToast('All data cleared');
     renderToday();
